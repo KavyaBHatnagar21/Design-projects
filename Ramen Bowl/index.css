@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.heading {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-transform: uppercase;
+}
+
+button {
+  padding: 1%;
+  width: 15%;
+  background-color: transparent;
+  border: none;
+  border-radius: 2px;
+  outline: 2px solid grey;
+}
+
+/* Nav bar */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  font-size: 1.2rem;
+}
+
+.nav-items,
+.logo {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+nav > .logo {
+  font-size: 2rem;
+}
+
+.phone-service {
+  width: 112px;
+}
+/* Ramen bowl */
+
+.p-relative {
+  position: relative;
+}
+
+.ramen-bowl {
+  background-image: url("./assets/images/gray-floral-border-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin-top: 10px;
+}
+
+.ramen-bowl > img {
+  height: 100%;
+  position: absolute;
+  right: 50px;
+  top: 80px;
+}
+
+.ramen-bowl-text > .ramen-bowl-heading {
+  color: antiquewhite;
+  font-size: 30px;
+}
+
+.ramen-bowl-text > p {
+  color: antiquewhite;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.ramen-bowl-text {
+  width: 40%;
+  padding-top: 10%;
+  margin-left: 10%;
+}
+
+/* Ramen varities */
+
+.ramen-varieties {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ramen-varieties > .ramen-varieties-heading {
+  font-size: 30px;
+}
+
+.ramen-varieties-img-container {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.ramen-varieties-img-container img {
+  width: 100%;
+  height: 100%; /* Ensures image fills the container */
+  object-fit: cover;
+}
+
+.ramen-images > article > .heading {
+  font-weight: bolder;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.ramen-images > article {
+  width: 20%;
+  min-width: 200px;
+  text-align: center;
+}
+
+.ramen-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.ramen-varieties {
+  margin: 5%;
+}
+
+/* Food-and-drink */
+
+.food-and-drink {
+  background-image: url(./assets/images/crupled-paper.avif);
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-bottom: 100px;
+  padding-left: 10%;
+}
+
+.food-and-drink > .heading {
+  font-weight: 500;
+  font-size: 30px;
+  padding-top: 50px;
+  margin-bottom: 2rem;
+}
+
+.food-and-drink > p {
+  font-size: 21px;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.item-container > div > img {
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.item-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.food-and-drink-item {
+  align-self: baseline;
+  text-align: center;
+}
+
+.food-and-drink-item > img {
+  margin: 0.5rem;
+}
+
+.vertical-line {
+  border: 1px solid black;
+  border-right: 0;
+}
+
+#order-now {
+  margin-top: 2rem;
+  outline: 1px solid black;
+}
+
+.food-and-drink > img {
+  width: 500px;
+  /* position: absolute;
+  right: 0; */
+}
+
+#asian-chef-cooking {
+  float: right;
+}
+
+/* Raw noodles */
+
+.raw-noodles {
+  background-image: url("./assets/images/pexels-amanda-hemphill-7440368.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  background-position-y: 50%;
+}
+
+.raw-noodles-heading {
+  color: antiquewhite;
+  font-size: 30px;
+  padding-top: 50px;
+  margin-left: 10%;
+}
+
+.raw-noodles > p {
+  color: antiquewhite;
+  font-size: 18px;
+  margin-top: 2rem;
+  margin-left: 10%;
+  width: 80%;
+  min-width: 500px;
+  line-height: 1.5;
+}
+
+/* Chef profiles */
+
+.culinary-artists {
+  margin: 5%;
+}
+
+.culinary-artists-heading {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10%;
+}
+
+.culinary-artists > p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 1.5rem;
+  width: 80%;
+  margin-left: 8rem;
+  margin-bottom: 5%;
+}
+
+.chef {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.chef > article {
+  text-align: center;
+}
+
+.chef-profile {
+  width: 20%;
+  min-width: 200px;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chef-name {
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  font-weight: bolder;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.profile-img-container {
+  width: 200px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-img-container > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* explore-ramen-grid */
+
+.explore-ramen-grid-heading {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.explore-ramen-grid > p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 5%;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  gap: 2rem;
+  padding-bottom: 5%;
+}
+
+.ramen-item > .heading {
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: antiquewhite;
+  padding-left: 2rem;
+}
+
+.ramen-item > p {
+  color: antiquewhite;
+  padding-left: 2rem;
+}
+
+.ramen-item {
+  width: 200px;
+  height: 200px;
+}
+
+.ramen-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-position-x: left;
+  background-position-y: 50%;
+}
+
+#Shoyu {
+  background-image: url("./assets/images/pexels-cats-coming-1907244.jpg");
+  grid-row: 1 / 3;
+  grid-column: 1 / 1;
+}
+
+#Miso {
+  background-image: url("./assets/images/pexels-alleksana-4224206.jpg");
+  grid-row: 3 / 4;
+  grid-column: 1 / 1;
+}
+
+#Shio {
+  background-image: url("./assets/images/pexels-jnm-thapa-11829701.jpg");
+  grid-column: 2 /3;
+  grid-row: 1 /2;
+}
+
+#Tonkotsu {
+  background-image: url("./assets/images/pexels-세훈-예-15387053.jpg");
+  grid-column: 2 /3;
+  grid-row: 2 / 4;
+}
+
+#Wakayama {
+  background-image: url("./assets/images/dark-noodles.jpg");
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+#Taiwan {
+  background-image: url("./assets/images/ramen\ images/ramen-2.webp");
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+#Okinawa {
+  background-image: url("./assets/images/pexels-alleksana-6092837.jpg");
+  grid-column: 3 / 4;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+}
