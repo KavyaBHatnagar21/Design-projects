@@ -1,0 +1,288 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.text-style {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.container {
+  display: grid;
+  grid-template-columns: minmax(250px, auto) 1fr minmax(150px, 28%);
+  height: 100vh;
+}
+
+.left-section {
+  padding: 0 2em;
+  border-right: 1px solid gainsboro;
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.left-section > button {
+  border-radius: 5.5em;
+  padding: 1em;
+  width: 15em;
+  height: 3.5em;
+  color: white;
+  background-color: #55adee;
+  border: 0px;
+  font-weight: bolder;
+}
+
+.logo > img {
+  height: 3em;
+  width: 3em;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.feed-section {
+  border-right: 1px solid gainsboro;
+}
+
+/* right-panel */
+
+.search-twitter {
+  border-radius: 5em;
+  background-color: #e5ebee;
+  padding: 1em;
+  color: gray;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.whats-happening-section,
+.who-to-follow-section {
+  border-radius: 2em;
+  background-color: #f5f7f9;
+  padding: 1em;
+  margin: 1em;
+}
+
+.whats-happening-heading {
+  font-size: 150%;
+}
+
+.seperator {
+  border: 2px solid gainsboro;
+  border-radius: 2px;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.heading {
+  font-weight: bolder;
+}
+
+.hash-tags {
+  font-weight: 500;
+}
+
+.tags {
+  color: #55adee;
+}
+
+.dot {
+  border: solid gray;
+  margin: 0 0.3em;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  height: 0.2em;
+  border-radius: 5em;
+}
+
+.category-dot-time {
+  color: gray;
+  display: flex;
+  align-items: baseline;
+}
+
+.image-div > img {
+  border-radius: 1.5em;
+}
+
+.image-div > .hq {
+  width: 5em;
+  height: 5em;
+  object-fit: cover;
+}
+
+.image-div > .mm {
+  width: 35%;
+  height: 35%;
+}
+
+.article-info {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.show-more-section {
+  color: #55adee;
+  margin-bottom: 0.5em;
+}
+
+.category-arrow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  justify-content: space-evenly;
+}
+
+.profile > .follow-button {
+  background-color: #55adee;
+  color: #f1f2f3;
+  padding: 0.8em;
+  border-radius: 50px;
+  width: 5em;
+  height: 1em;
+  text-align: center;
+}
+
+.profile > img {
+  border-radius: 50px;
+  width: 5em;
+  height: 5em;
+  object-fit: cover;
+}
+
+/* feed-section */
+
+.feed-section {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.feed-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.feed-home > p {
+  font-size: 1.8em;
+  margin-top: 1%;
+  margin-bottom: 0;
+}
+
+.whats-happening-avatar {
+  display: flex;
+  padding-left: 2%;
+  padding-right: 2%;
+  gap: 10px;
+}
+.whats-happening-avatar > p {
+  font-size: 2em;
+  color: gray;
+}
+.whats-happening-avatar > img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.whats-happening-icons-button {
+  padding: 2% 2% 0 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.whats-happening-icons {
+  display: flex;
+  gap: 10px;
+  margin-left: 10%;
+}
+
+.whats-happening-icons-button > button {
+  background-color: #55adee;
+  color: #f1f2f3;
+  padding: 10px;
+  border-radius: 50px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  border: 0;
+  font-weight: 900;
+}
+
+/* .whats-happening,
+.feed-home {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+} */
+
+.thick-grey-border {
+  border: 10px solid gainsboro;
+  border-radius: 2px;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* tweet */
+
+.feeds {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.tweet > .avatar {
+  display: flex;
+}
+
+.avatar > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.menu:hover {
+  background-color: #e8f5fe;
+  cursor: pointer;
+  border-radius: 30px;
+  padding-left: 2px;
+}
